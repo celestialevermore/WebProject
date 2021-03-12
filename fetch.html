@@ -1,26 +1,22 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
+<!doctype html>
+<html>
   <body>
-    <input type="button"  value="fetch" onClick="
-
-<!--       fetch('CSS').then(function(response){
+    <article>
+ 
+    </article>
+    <input type="button" value="fetch" onclick="
+      /*
+      fetch('html').then(function(response){
         response.text().then(function(text){
-<!--           alert(text); -->
-          document.querySelector('article').innerHTML=text;
+          document.querySelector('article').innerHTML = text;
         })
-      }) -->
-      //Asnynchronous
-<!--       function callbackme(){
-        console.log('response end');
-      } -->
-                                         
-                                         
-      fetch('1.html').then(function(response){
-        console.log(response);
+      })
+      */
+      //Asynchronous
+      fetch('html').then(function(response){
+        if(response.status == '404'){
+          alert('Not found')
+        }
       });
       console.log(1);
       console.log(2);
