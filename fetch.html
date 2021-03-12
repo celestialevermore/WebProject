@@ -7,15 +7,15 @@
   <body>
     <input type="button"  value="fetch" onClick="
 
-      fetch('CSS').then(function(response){
+<!--       fetch('CSS').then(function(response){
         response.text().then(function(text){
           alert(text);
           document.querySelector('article').innerHTML=text;
         })
-      })
+      }) -->
 
       function callbackme(){
-        console.log('end');
+        console.log('response end');
       }
       fetch('1.html').then(callbackme);
       console.log(1);
